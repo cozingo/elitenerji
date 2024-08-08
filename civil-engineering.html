@@ -15,37 +15,61 @@
   </head>
   <body>
     <div class="preloader">
-      <div class="wrapper-triangle">
-        <div class="pen">
-          <div class="line-triangle">
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-          </div>
-          <div class="line-triangle">
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-          </div>
-          <div class="line-triangle">
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-            <div class="triangle"></div>
-          </div>
-        </div>
+      <style>
+        .logo-container {
+          perspective: 1000px;
+        }
+
+        .logo {
+          width: 300px;
+          animation: fadeoutup 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeoutup {
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+          0% {
+            transform: translateY(-100px);
+            opacity: 0;
+          }
+        }
+      </style>
+      <div class="logo-container">
+        <img src="images/LOGO ELIT.png" alt="Elite Enerji Logo" class="logo">
       </div>
+<!--      <div class="wrapper-triangle">-->
+<!--        <div class="pen">-->
+<!--          <div class="line-triangle">-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--          </div>-->
+<!--          <div class="line-triangle">-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--          </div>-->
+<!--          <div class="line-triangle">-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--            <div class="triangle"></div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
     <div class="page">
       <!-- Page Header and Swiper-->
@@ -62,8 +86,11 @@
                     <!-- RD Navbar Toggle-->
                     <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                     <!-- RD Navbar Brand-->
-                    <div class="rd-navbar-brand"><a class="brand" href="https://ld-wt73.template-help.com/wt_prod-10987/index.html">
-                      <img class="brand-logo-dark" src="./images/LOGO%20ELIT.png" alt="" width="116" height="51"/></a></div>
+                    <div class="rd-navbar-brand">
+                      <a class="brand" href="https://ld-wt73.template-help.com/wt_prod-10987/index.html">
+                        <img class="brand-logo-dark" src="./images/LOGO%20ELIT.png" alt="" width="116" height="51"/>
+                      </a>
+                    </div>
                   </div>
                   <div class="rd-navbar-main-element">
                     <div class="rd-navbar-nav-wrap">
